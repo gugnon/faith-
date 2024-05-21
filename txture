@@ -1,0 +1,9 @@
+local function setWhiteColor(obj)
+    if obj:IsA("BasePart") then
+    
+    end
+    for _, child in ipairs(obj:GetChildren()) do
+        setWhiteColor(child)
+    end
+end
+setWhiteColor(game.Workspace)
